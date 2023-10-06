@@ -16,6 +16,7 @@ interface RestrictionInfo<T> {
 
 // 해당 데코레이터가 선언된 클래스 선언만으로 최초 1회 호출?
 function RestrictParamValue<T>(restrictedValues: T[]) {
+  // 함수 리팩토링?
   return (target: any, propertyKey: string, index: number) => {
     // 기존 배열 가져오기
     const prevMeta: RestrictionInfo<any>[] =
