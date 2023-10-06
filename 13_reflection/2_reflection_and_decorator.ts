@@ -19,6 +19,7 @@ function RestrictParamValue<T>(restrictedValues: T[]) {
   // 함수 리팩토링?
   return (target: any, propertyKey: string, index: number) => {
     // 기존 배열 가져오기
+    // 고정된 T가 아닌 다양한 타입이 혼재할 수 있어서 any?
     const prevMeta: RestrictionInfo<any>[] =
       Reflect.getOwnMetadata(restrictParamValueKey, target, propertyKey) ?? [];
 
