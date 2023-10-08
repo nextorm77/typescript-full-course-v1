@@ -58,7 +58,7 @@ function ValidateMethod(
   // 화살표 함수는 최신 기법(자신만의 this 생성X)이어서
   // descripter.value(구 문법?)와 호환X?
   // 실행시 작동 코드
-  descripter.value = function (...args: any) {
+  descripter.value = function (...args: any[]) {
     const invalids = metas.filter(
       (x) => !x.restrictedValues.includes(args[x.index]),
     );
