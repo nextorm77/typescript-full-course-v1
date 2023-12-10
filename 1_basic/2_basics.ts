@@ -41,7 +41,7 @@ unknownType = true;
 let unkonwType2: unknown = unknownType;
 let anyType2: any = unknownType;
 
-// never - 어떠한 탁ㅂㅅ도 저장되거나 반환되지 않을때 사용하는 타입
+// never - 어떠한 값도 저장되거나 반환되지 않을때 사용하는 타입
 // let neverType: never = null;
 // let neverType: never = undefined;
 // let neverType: never = 'test';
