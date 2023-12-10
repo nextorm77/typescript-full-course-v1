@@ -44,7 +44,7 @@ strListOrBooleanList = [
 
 type StrOrNumberList = (string | number)[];
 
-let stringOrNumberList = [
+let stringOrNumberList: StrOrNumberList = [
     1, 2, 3,
     '아이유',
     '레드벨벳',
