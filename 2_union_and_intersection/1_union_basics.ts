@@ -140,6 +140,7 @@ type Cat = {
 
 type PersonOrCat = Person | Cat;
 
+// 아래 예시는 오류 발생 => 최소 충족 요건: (name, age) or (breed, country)
 const personOrCat: PersonOrCat = {
     // name: '코드팩토리',
     age: 32,
