@@ -10,7 +10,7 @@
 // const decimal = 12.3278;
 // console.log(decimal.toFixed(2));
 
-// numberOrString.toFixed();
+// numberOrString.toFixed(); // toFixed 함수 자동완성X, 원천 오류 표시
 
 /**
  * Narrowing 종류
