@@ -47,7 +47,7 @@ const number = numbers[0];
 const nos = numbersAndString[0];
 const nos2 = numbersAndString[100];
 
-// tuple
+// tuple: 배열의 구성요소도 상수처럼 변경 불가
 const twoNumbers = [1, 3] as const;
 
 // twoNumbers[0] = 10;
