@@ -58,7 +58,7 @@ let stringOrBool2: string | boolean = Math.random() > 0.5 ?
 if (numbOrString2 === stringOrBool2) {
     numbOrString2;
     stringOrBool2;
-} else {
+} else { // 서로 다른 경우는 여러 조합 가능
     numbOrString2;
     stringOrBool2;
 }
