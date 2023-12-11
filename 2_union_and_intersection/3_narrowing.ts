@@ -113,6 +113,9 @@ if (dateOrString instanceof Date) {
 }
 
 // (7) Discriminated Union Narrowing
+
+// 구분할 타입을 프로퍼티 단위에서 섞어버리면
+// 타입 유추가 명확X
 interface Animal {
     type: 'dog' | 'human';
     height?: number;
@@ -130,10 +133,10 @@ let animal: Animal = Math.random() > 0.5 ?
     };
 
 if (animal.type === 'human') {
-    animal.height;
+    animal.height; // 타입이 2개(undefined 포함) 유추
 } else {
-    animal.breed;
-    animal.height;
+    animal.breed; // 타입이 2개(undefined 포함) 유추
+    animal.height; // 타입이 2개(undefined 포함) 유추
 }
 
 interface Human2 {
@@ -151,6 +154,7 @@ interface Fish2{
     length: number;
 }
 
+// 복합타입(?)내 타입을 구분하여 나중에 타입 유추 명확
 type HumanOrDog2 = Human2 | Dog2 | Fish2;
 
 let humanOrDog2: HumanOrDog2 = Math.random() > 0.5 ?
@@ -166,9 +170,9 @@ let humanOrDog2: HumanOrDog2 = Math.random() > 0.5 ?
     };
 
 if(humanOrDog2.type === 'human'){
-    humanOrDog2;
+    humanOrDog2; // 타입 1개만 유추
 }else{
-    humanOrDog2;
+    humanOrDog2; // 타입 1개만 유추
 }
 
 // (8) Exhuastiveness Checking
