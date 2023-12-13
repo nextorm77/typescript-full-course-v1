@@ -1,6 +1,8 @@
 /**
  * Type Predicate
  */
+
+// input is number => 논리적으로 명확(input is number한 코드에서 input 위로 마우스오버시 number로 표시
 function isNumber(input: any): input is number{
     return typeof input === 'number';
 }
@@ -14,11 +16,11 @@ function isNumberRetBool(input: any): boolean{
 let number: any = 5;
 
 if(isNumberRetBool(number)){
-    number;
+    number; // 마우스오버시 any로 표시
 }
 
 if(isNumber(number)){
-    number;
+    number; // 마우스오버시 input으로 표시
 }
 
 interface Doge{
