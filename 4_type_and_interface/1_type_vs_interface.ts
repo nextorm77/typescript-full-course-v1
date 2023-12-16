@@ -84,7 +84,7 @@ interface GetXnY {
 
 interface GetXnY {
     getX: (x: number) => number;
-    // getY: (y: string) => number;
+    // getY: (y: string) => number; // 프로퍼티는 동일 형식 중복 또는 추가 가능, 그외 불가?
 }
 
 // 메소드
@@ -93,10 +93,9 @@ interface GetXnY2 {
     getY(y: number): number;
 }
 
-// 메소드 오버라이딩?
 interface GetXnY2 {
     getX(x: number): number;
-    getY(y: string): number;
+    getY(y: string): number; // 메소드 오버라이딩?
 }
 
 const testMethod: GetXnY2 = {
