@@ -87,7 +87,7 @@ interface GetXnY {
     // getY: (y: string) => number; // 프로퍼티는 동일 형식 중복 또는 추가 가능, 그외 불가?
 }
 
-// 메소드
+// 메소드(함수 시그니처 선언과 유사?)
 interface GetXnY2 {
     getX(x: number): number;
     getY(y: number): number;
