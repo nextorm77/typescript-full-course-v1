@@ -64,6 +64,8 @@ let rectangle: IRectangle = {
 /**
  * Interface Merging
  */
+// interface, class 모두 객체 구현 전단계?
+// class는 구현까지, interface는 타입정의까지?
 class Review {
     // 프로퍼티
     getY = (x: number) => { return x };
@@ -74,6 +76,7 @@ class Review {
     }
 }
 
+// 프로퍼티
 interface GetXnY {
     getX: (x: number) => number;
     getY: (y: number) => number;
@@ -84,11 +87,13 @@ interface GetXnY {
     // getY: (y: string) => number;
 }
 
+// 메소드
 interface GetXnY2 {
     getX(x: number): number;
     getY(y: number): number;
 }
 
+// 메소드 오버라이딩?
 interface GetXnY2 {
     getX(x: number): number;
     getY(y: string): number;
