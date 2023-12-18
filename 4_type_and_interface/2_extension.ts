@@ -97,7 +97,7 @@ type TRectangle = THeight & {
 }
 
 // const rectangle: TRectangle = {
-//     height:,
+//     height:, // never 타입(number 이면서 string인 경우?)으로 어떤 값도 입력 불가
 //     width: 100,
 // }
 
