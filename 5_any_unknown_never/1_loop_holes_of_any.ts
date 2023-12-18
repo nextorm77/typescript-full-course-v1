@@ -4,9 +4,9 @@
 let number: number;
 number = 10;
 
-// number.toUpperCase();
+// number.toUpperCase(); // 문법오류
 
-// (number as any).toUpperCase();
+// (number as any).toUpperCase(); // 문법오류X
 
 const multiplyTwo = (x: number, y: number) => {
     return x * y;
