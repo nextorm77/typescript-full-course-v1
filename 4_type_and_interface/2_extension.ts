@@ -119,7 +119,7 @@ interface IHeight{
 }
 
 // interface IRectangle extends IHeight{
-//     height: string;
+//     height: string; // 바로 앞 섹션에서 확인된 것처럼 interface에선 프로퍼티 overriding 불가능(논리적 모순인 경우만?) => 문법 오류 발생
 //     width: number;
 // }
 
@@ -128,6 +128,6 @@ interface IWidth{
 }
 
 interface IRectangle extends IWidth{
-    width: number;
+    width: number; // number | string 이면서 number 인 것은 number => 논리적 모순인 아닌 경우는 프로퍼티 overriding 가능?
     height: number;
 }
