@@ -29,4 +29,19 @@ const callback = (x:number, y: number)=>{
     return x * y;
 }
 
+// any 타입 개선 start => 강의 내용에는 없음
+interface callbackType {
+    (x: number): number;
+  }
+
+type callbackType2 = (x: number) => number;
+
+const callbackRunner = (x: number, y: number, callback: callbackType2) => {
+return callback(x);
+};
+
+const callback = (x: number, y: number) => x * y;
+const callback2 = (x: number) => x * x;
+// any 타입 개선 end
+
 console.log(callbackRunner(5, 4, callback));
