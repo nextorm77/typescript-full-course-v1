@@ -110,8 +110,8 @@ type TRectangle2 = TWidth & {
 }
 
 const rectangle: TRectangle2 = {
-    height: 100,
-    width: 200,
+    height: 100, 
+    width: 200, // number | string 이면서 number인 것은 number
 }
 
 interface IHeight{
