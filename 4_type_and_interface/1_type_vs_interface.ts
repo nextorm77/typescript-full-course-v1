@@ -84,7 +84,7 @@ interface GetXnY {
 
 interface GetXnY {
     getX: (x: number) => number;
-    // getY: (y: string) => number; // interface의 경우, 프로퍼티는 동일 형식 중복 또는 추가 가능
+    // getY: (y: string) => number; // interface의 경우, 프로퍼티는 동일 형식 중복 또는 추가만 가능? => 다음 섹션의 확장(extends)과 비교
 }
 
 // 메소드(함수 시그니처 선언과 유사?)
