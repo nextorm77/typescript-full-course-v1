@@ -15,11 +15,11 @@ const multiplyTwo = (x: number, y: number) => {
 let args1: any = '코드팩토리';
 let args2: any = true;
 
-multiplyTwo(args1, args2);
-// multiplyTwo('코드팩토리', true);
+multiplyTwo(args1, args2); // any는 문법오류X
+// multiplyTwo('코드팩토리', true); // 문법오류
 
 let iu:any = {name: '아이유', age: 30};
-iu;
+iu; // 프로퍼티 자동완성 기능도 불가능
 
 const callbackRunner = (x: number, y: number, callback: any)=>{
     return callback(x);
