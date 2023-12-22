@@ -37,10 +37,12 @@ unknownValue = undefined;
 // let nullType: null = unknownValue; // 오류, 타입 불일치
 // let undefinedType: undefined = unknownValue; // 오류, 타입 불일치
 
+// any 타입은 기본적으로 아래(3줄) 코드 정상 판단
 anyValue.toUpperCase();
 anyValue.name;
 new anyValue();
 
+// unknown 타입은 기본적으로 아래(3줄) 코드 비정상 판단
 // unknownValue.toUpperCase();
 // unknownValue.name;
 // new unknownValue();
