@@ -81,12 +81,14 @@ type anyAndU = any & unknown; // 최종타입: any, any안에 unknown 포함(?)
 let number1: unknown = 10;
 let number2: unknown = 20;
 
+// 아래(4줄) 코드는 오류 발생, unkown 타입이라 계산 성립 불가(?)
 // number1 + number2;
 // number1 - number2;
 // number1 * number2;
 // number1 / number2;
 
+// 아래 연산자만 허용, 이유는 강의에 설명x
 number1 === number2;
-number1 == number2;
+number1 == number2; // 타입을 제외하고 같은 지
 number1 !== number2;
-number1 != number2;
+number1 != number2; // 타입을 제외하고 다른 지
