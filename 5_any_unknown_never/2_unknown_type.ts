@@ -60,20 +60,20 @@ if(isString(testVal)){
 /**
  * Union Type
  */
-type uOrString = unknown | string;
-type uOrBoolean = unknown | boolean;
-type uOrNumber = unknown | number;
-type uOrAny = unknown | any;
-type anyOrU = any | unknown;
+type uOrString = unknown | string; // 최종타입: unknown
+type uOrBoolean = unknown | boolean; // 최종타입: unknown
+type uOrNumber = unknown | number; // 최종타입: unknown
+type uOrAny = unknown | any; // 최종타입: any, any안에 unknown 포함(?)
+type anyOrU = any | unknown; // 최종타입: any, any안에 unknown 포함(?)
 
 /**
  * Intersection Type
  */
-type uAndString = unknown & string;
-type uAndBoolean = unknown & boolean;
-type uAndNumber = unknown & number;
-type uAndAny = unknown & any;
-type anyAndU = any & unknown;
+type uAndString = unknown & string; // 최종타입: string
+type uAndBoolean = unknown & boolean; // 최종타입: boolean
+type uAndNumber = unknown & number; // 최종타입: number
+type uAndAny = unknown & any; // 최종타입: any, any안에 unknown 포함(?)
+type anyAndU = any & unknown; // 최종타입: any, any안에 unknown 포함(?)
 
 /**
  * Operator 사용
