@@ -21,21 +21,21 @@ unknownValue = {};
 unknownValue = null;
 unknownValue = undefined;
 
-// let anyType: any = anyValue;
-// let unknownType: unknown = anyValue;
-// let booleanType: boolean = anyValue;
-// let arrayType: string[] = anyValue;
-// let objectType: {} = anyValue;
-// let nullType: null = anyValue;
-// let undefinedType: undefined = anyValue;
+// let anyType: any = anyValue; // 정상
+// let unknownType: unknown = anyValue; // 정상
+// let booleanType: boolean = anyValue; // 정상
+// let arrayType: string[] = anyValue; // 정상    
+// let objectType: {} = anyValue; // 정상, 개인적으로 객체 타입 선언 특이함.
+// let nullType: null = anyValue; // 정상
+// let undefinedType: undefined = anyValue; // 정상
 
-// let anyType: any = unknownValue;
-// let unknownType: unknown = unknownValue;
-// let booleanType: boolean = unknownValue;
-// let arrayType: string[] = unknownValue;
-// let objectType: {} = unknownValue;
-// let nullType: null = unknownValue;
-// let undefinedType: undefined = unknownValue;
+// let anyType: any = unknownValue; // 정상
+// let unknownType: unknown = unknownValue; // 정상
+// let booleanType: boolean = unknownValue; // 오류, 타입 불일치
+// let arrayType: string[] = unknownValue; // 오류, 타입 불일치
+// let objectType: {} = unknownValue; // 오류, 타입 불일치
+// let nullType: null = unknownValue; // 오류, 타입 불일치
+// let undefinedType: undefined = unknownValue; // 오류, 타입 불일치
 
 anyValue.toUpperCase();
 anyValue.name;
