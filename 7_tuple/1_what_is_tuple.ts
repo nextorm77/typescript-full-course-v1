@@ -1,5 +1,5 @@
 /**
- * Tuple
+ * Tuple: JS에는 존재하지 않은 개념
  */
 let iveTopMembers: string[] = ['안유진', '장원영', '레이'];
 
