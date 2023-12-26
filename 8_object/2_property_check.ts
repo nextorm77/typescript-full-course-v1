@@ -16,5 +16,5 @@ const iu = {
     age: 30,
 }
 
-const testName: TName = iu;
-const testAge: TAge = iu;
+const testName: TName = iu; // 좌변이 동일한(속성명, 타입 일치) 속성이 1개 이상이면 정상
+const testAge: TAge = iu; // 좌변이 동일한(속성명, 타입 일치) 속성이 1개 이상이면 정상
