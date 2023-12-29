@@ -20,6 +20,7 @@ class Dog implements Animal {
         return `${this.name}이 점프를 합니다.`;
     }
 
+    // 인터페이스 구성 요소외 멤버변수(프로퍼티), 멤버함수(메소드) 선언도 가능? 
     dance() {
 
     }
