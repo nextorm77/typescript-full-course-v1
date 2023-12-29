@@ -26,7 +26,7 @@ class Dog implements Animal {
     }
 }
 
-let ori: any = new Dog('오리', 3);
+let ori: any = new Dog('오리', 3); // any로 타입 지정시 자동완성 등의 TS 장점이 사라짐
 
 function instanceOfAnimal(object: any): object is Animal {
     return 'jump' in object;
