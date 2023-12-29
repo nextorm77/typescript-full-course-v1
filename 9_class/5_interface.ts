@@ -4,7 +4,7 @@
 interface Animal {
     name: string;
     age: number;
-    jump(): string;
+    jump(): string; // 함수 시그니처 선언과 유사
 }
 
 class Dog implements Animal {
