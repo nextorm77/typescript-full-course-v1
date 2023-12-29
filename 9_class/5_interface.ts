@@ -26,10 +26,10 @@ class Dog implements Animal {
     }
 }
 
-let ori: any = new Dog('오리', 3); // any로 타입 지정시 자동완성 등의 TS 장점이 사라짐
+let ori: any = new Dog('오리', 3);
 
 function instanceOfAnimal(object: any): object is Animal {
-    return 'jump' in object;
+    return 'jump' in object; // 어떤 객체에서 해당 키 존재 유무 확인시 'in' 키워드 사용
 }
 
 if (instanceOfAnimal(ori)) {
