@@ -37,12 +37,12 @@ ahri.dance();
 ahri.sing();
 
 let person: Parent; // 클래스를 타입으로 사용
-person = codefactory;
-person = ahri;
+person = codefactory; 
+person = ahri; // (좌변)부모 < (우변)자식 => 가능?
 
 let person2: Child;
 person2 = ahri;
-// person2 = codefactory;
+// person2 = codefactory; // (좌변)자식 > (우변)부모 => 불불가능?
 
 /**
  * optional 프로퍼티를 유의하자
