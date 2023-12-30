@@ -31,12 +31,12 @@ const codefactory = new Parent('코드팩토리');
 const ahri = new Child('아리', 12);
 
 codefactory.dance();
-// codefactory.sing();
+// codefactory.sing(); // 자동완성조차 안됨
 
 ahri.dance();
 ahri.sing();
 
-let person: Parent;
+let person: Parent; // 클래스를 타입으로 사용
 person = codefactory;
 person = ahri;
 
