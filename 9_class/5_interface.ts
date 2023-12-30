@@ -26,7 +26,8 @@ class Dog implements Animal {
     }
 }
 
-let ori: any = new Dog('오리', 3);
+// let ori = new Dog('오리', 3); // 37줄 'ori' 마우스오버시 'Dog' 타입 표시
+let ori: any = new Dog('오리', 3); // 37줄 'ori' 마우스오버시 'Animal' 타입 표시
 
 function instanceOfAnimal(object: any): object is Animal {
     return 'jump' in object; // 어떤 객체에서 해당 키 존재 유무 확인시 'in' 키워드 사용
