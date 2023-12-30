@@ -26,7 +26,7 @@ class Dog implements Animal {
     }
 }
 
-// let ori = new Dog('오리', 3); // 37줄 'ori' 마우스오버시 'Dog' 타입 표시
+// let ori = new Dog('오리', 3); // 37줄 'ori' 마우스오버시 'Dog' 타입 표시 => 이미 'Dog'타입으로 확정
 let ori: any = new Dog('오리', 3); // 37줄 'ori' 마우스오버시 'Animal' 타입 표시
 
 function instanceOfAnimal(object: any): object is Animal {
@@ -70,7 +70,7 @@ class Cat implements Animal, Pet {
     }
 }
 
-type AnimalAndPet = Animal & Pet;
+type AnimalAndPet = Animal & Pet; // 다중인터페이스를 type으로 결합
 
 class Cat2 implements AnimalAndPet {
     // Animal
@@ -120,12 +120,13 @@ class Idol {
     }
 }
 
+// 생성자 타입을 설정할 때?, Generic에서 다시 사용한다고 함
 interface IdolConstructor {
-    new(name: string, age: number): Idol;
+    new (name: string, age: number): Idol; // 일반 함수 시그니처와 다르게 생성자(constructor) 타입은 'new'를 붙임?
 }
 
 function createIdol(constructor: IdolConstructor, name: string, age: number) {
-    // return new Idol(name, age);
+    // return new Idol(name, age); // 아래 코드와 동일
     return new constructor(name, age);
 }
 
