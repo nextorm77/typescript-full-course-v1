@@ -9,7 +9,7 @@ class PropertyTestParent{
     public publicProperty = 'public property';
     protected protectedProperty = 'protected property';
     private privateProperty = 'private property';
-    #jsPrivateProperty = 'js private property';
+    #jsPrivateProperty = 'js private property'; // ECMAScript 2015 이상 적용 가능
 
     test(){
         this.publicProperty;
@@ -31,4 +31,4 @@ class PropertyTestChild extends PropertyTestParent{
 const instance = new PropertyTestChild();
 
 instance.publicProperty;
-// instance.
+// instance.protectedProperty; // 오류
