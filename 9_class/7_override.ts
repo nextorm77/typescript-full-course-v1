@@ -47,15 +47,15 @@ class PropertyParent{
 }
 
 // class PropertyChild extends PropertyParent{
-//     name: number;
+//     name: number; // 오류1. 부모 클래스의 동일 속성 타입 불일치
 
 //     constructor(name: number){
-//         this.name = name;
+//         this.name = name; // 오류2. super(name) 미사용
 //     }
 // }
 
 class PropertyParent2 {
-    name?: string | number | undefined;
+    name?: string | number | undefined; // undefine 타입 명시는 해도 되고 안해도 된다.(옵션(?)표시와 중복)
 
     constructor(name: string | number){
         this.name = name;
@@ -66,7 +66,7 @@ class PropertyChild2 extends PropertyParent2{
     name: string;
 
     constructor(name: string){
-        super(name);
+        super(name); // 미호출시 오류
         this.name = name;
     }
 }
