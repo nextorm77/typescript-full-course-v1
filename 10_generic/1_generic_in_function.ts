@@ -43,7 +43,8 @@ const multipleGenericResult2 = multipleGenerics(
 );
 
 function getTuple<X, Y>(val1: X, val2: Y) {
-    return [val1, val2] as const;
+    return [val1, val2] as const; // 50줄의 'tuple' 타입: readonly [boolean, number]
+    // return [val1, val2]; // 50줄의 'tuple' 타입: (number | boolean)[]
 }
 
 const tuple = getTuple(true, 100);
@@ -67,7 +68,9 @@ class Car {
         this.codeName = codeName;
     }
 }
-
+// 여기서 T는 생성자를 표현하는 타입
+// extends는 클래스 확장 키워드를 의미
+// new(...args: any[]): {} => 객체(인스턴스:{})를 반환하는 생성자 표현식
 function instantiator<T extends { new(...args: any[]): {} }>(constructor: T,
     ...args: any[]) {
     return new constructor(...args);
