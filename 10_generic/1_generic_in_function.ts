@@ -68,6 +68,10 @@ class Car {
         this.codeName = codeName;
     }
 }
+
+// 클래스 강의에서 interface로 생성자 타입 설정한 것을 Generic으로 설정해본다.
+// 참고 코드
+
 // 여기서 T는 생성자를 표현하는 타입
 // extends는 클래스 확장 키워드를 의미
 // new(...args: any[]): {} => 객체(인스턴스:{})를 반환하는 생성자 표현식
