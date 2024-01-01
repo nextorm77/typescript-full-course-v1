@@ -4,7 +4,7 @@
 type GenericSimpleType<T> = T;
 
 const genericString: GenericSimpleType<string> = '코드팩토리';
-// const genericString2: GenericSimpleType = '코드팩토리';
+// const genericString2: GenericSimpleType = '코드팩토리'; // 형식인수 "<타입>"가 필요하다고 오류 발생
 
 interface DoneState<T>{
     data: T[];
