@@ -77,4 +77,4 @@ function instantiator<T extends { new(...args: any[]): {} }>(constructor: T,
 }
 
 console.log(instantiator(Idol, '아이유', 23));
-console.log(instantiator(Car, 'BMW', 1111));
+console.log(instantiator(Car, 'BMW', 1111)); // 생성자 인수의 타입체크가 안된다
