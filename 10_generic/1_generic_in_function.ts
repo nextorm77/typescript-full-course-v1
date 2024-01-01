@@ -69,9 +69,20 @@ class Car {
     }
 }
 
-// 클래스 강의에서 interface로 생성자 타입 설정한 것을 Generic으로 설정해본다.
+// 클래스 강의에서 interface로 생성자 타입 설정한 것을 Generic으로 일반화해서 설정해본다.
 // 참고 코드
+// interface IdolConstructor {
+//     new (name: string, age: number): Idol; // 일반 함수 시그니처와 다르게 생성자(constructor) 타입은 'new'를 붙임?
+// }
+//
+// function createIdol(constructor: IdolConstructor, name: string, age: number) {
+//     // return new Idol(name, age); // 아래 코드와 동일
+//     return new constructor(name, age);
+// }
+//
+// console.log(createIdol(Idol, '아이유', 32));
 
+// 표현식이 난해하지만, 실제 필드에서 많이 쓴다고 함.
 // 여기서 T는 생성자를 표현하는 타입
 // extends는 클래스 확장 키워드를 의미
 // new(...args: any[]): {} => 객체(인스턴스:{})를 반환하는 생성자 표현식
