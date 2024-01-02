@@ -1,6 +1,8 @@
 /**
  * Class에서 Generic 사용하기
  */
+
+// 생성자(constructor) 미사용
 class Pagination<Data, Message>{
     data: Data[] = [];
     message?: Message;
@@ -12,6 +14,7 @@ pgData.data;
 pgData.message;
 pgData.lastFetchedAt;
 
+// 생성자(constructor) 사용
 class Pagination2<Data, Message>{
     data: Data[] = [];
     message?: Message;
@@ -30,6 +33,7 @@ pagination2.data;
 pagination2.message;
 pagination2.lastFetchedAt;
 
+// 기본타입 지정
 class DefaultGeneric<T= boolean>{
     data: T[] = [];
 }
