@@ -1,5 +1,6 @@
 /**
  * Required Type
+ * 옵션 프로퍼티도 필수 프로퍼티로 만듦?
  */
 interface Dog {
     name: string;
