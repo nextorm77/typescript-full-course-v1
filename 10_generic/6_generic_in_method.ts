@@ -16,7 +16,9 @@ class Idol<T>{
     }
 }
 
+// yuJin: Idol<string> => 제너릭 자동유추
 const yuJin = new Idol('a999', '안유진');
+// const yuJin = new Idol<string>('a999', '안유진'); // 위 코드와 동일
 
 console.log(yuJin.sayHello('2023'));
 console.log(yuJin.sayHello(1992));
@@ -30,11 +32,19 @@ class Message<T> {
 const message = new Message<string>();
 message.sayHello<number>(2000, '하이!');
 
+// 클래스의 T와 메소드의 T는 다른 변수?
 class DuplicatedGenericName<T>{
     sayHello<T>(logTime: T){
         console.log(`logTime: ${typeof logTime}`);
     }
 }
+
+// 클래스의 T와 메소드의 T가 같은 변수인 경우
+// class DuplicatedGenericName<T> {
+//   sayHello(logTime: T) {
+//     console.log(`logTime: ${typeof logTime}`);
+//   }
+// }
 
 const duplicate = new DuplicatedGenericName<string>();
 
