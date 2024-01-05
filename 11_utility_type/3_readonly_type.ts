@@ -20,4 +20,4 @@ const bori: Readonly<Cat> = {
 
 // bori.name = '아이유';
 
-Object.freeze(bori);
+Object.freeze(bori); // 런타임의 JS에서 읽기 전용으로 만드는 방법
