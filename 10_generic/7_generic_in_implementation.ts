@@ -7,6 +7,7 @@ interface Singer<T, V> {
     sing(year: V): void;
 }
 
+// 클래스 선언시 Generic 타입 결정
 class Idol implements Singer<string, number> {
     name: string;
 
@@ -22,6 +23,7 @@ class Idol implements Singer<string, number> {
 const yuJin = new Idol('안유진');
 yuJin.sing(2003);
 
+// 인스턴스 생성시 Generic 타입 결정
 class Idol2<T, V> implements Singer<T, V> {
     name: T;
 
