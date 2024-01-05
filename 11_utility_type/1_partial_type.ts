@@ -14,6 +14,7 @@ const yuJin: Idol = {
 }
 
 function updateIdol(original: Idol, updates: Partial<Idol>): Idol{
+    // 프로퍼티 중복 발생시 맨 나중에 열거한 프로퍼티만 인정
     return {
         ...original,
         ...updates,
