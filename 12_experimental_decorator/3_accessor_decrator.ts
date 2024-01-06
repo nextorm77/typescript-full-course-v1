@@ -2,7 +2,7 @@
  * Accessor Decorator
  */
 class Rectangle{
-    #height: number;
+    #height: number; // '#'는 private 표시, JS엔진 버전이 높아야 문법 적용 가능? 
     #width: number;
 
     constructor(height: number, width: number){
