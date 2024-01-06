@@ -41,6 +41,22 @@ function Configurable(configurable: boolean){
 }
 
 console.log(Object.getOwnPropertyDescriptors(Idol.prototype));
+// 콘솔 결과
+// {
+//   constructor: {
+//     value: [class Idol],
+//     writable: true,
+//     enumerable: false,
+//     configurable: true
+//   },
+//   dance: {
+//     value: [Function: dance], // <= 아래 코드에서 이걸 변경해본다.
+//     writable: true,
+//     enumerable: false,
+//     configurable: false
+//   }
+// }
+
 
 function MethodCallLogger(env: string){
     return function(target: any, propertyKey: string, descriptor: PropertyDescriptor){
@@ -49,7 +65,7 @@ function MethodCallLogger(env: string){
         descriptor.value = function(...args: any[]){
             console.log(`[${env}] running function : ${propertyKey}`);
 
-            const result = originalMethod.apply(this, ...args);
+            const result = originalMethod.apply(this, ...args); // 이전 JS 강의에서 배웠다?
 
             return result;
         }
