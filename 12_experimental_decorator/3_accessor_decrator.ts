@@ -21,6 +21,7 @@ class Rectangle{
     }
 }
 
+// method descriptor 에서 이미 배운 내용
 function Configurable(configurable: boolean){
     return function(target: any, propertyKey: string, descriptor: PropertyDescriptor){
         descriptor.configurable = configurable;
