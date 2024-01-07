@@ -22,7 +22,7 @@ function RestrictParamValue<T>(restrictedValues: T[]) {
     // 기존 배열 가져오기
     // 고정된 T가 아닌 다양한 타입이 혼재할 수 있어서 any?
     const prevMeta: RestrictionInfo<any>[] =
-      Reflect.getOwnMetadata(restrictParamValueKey, target, propertyKey) ?? [];
+      Reflect.getOwnMetadata(restrictParamValueKey, target, propertyKey) ?? []; // ??: Nullish coalescing operator
 
     // 신규 배열 요소 생성
     // 상단 언급 제네릭 T를 활용
