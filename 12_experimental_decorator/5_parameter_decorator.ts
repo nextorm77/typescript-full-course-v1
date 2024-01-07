@@ -16,6 +16,7 @@ class Cat {
 const cat = new Cat('냥이');
 cat.dance('신나게');
 
+// propertyKey => 함수명 
 function LogParam(target: any, propertyKey: string, paramIndex: number){
     console.log(`${paramIndex}번째 파라미터인 ${propertyKey}가 입력됐습니다.`);
 }
