@@ -16,6 +16,7 @@ interface RestrictionInfo<T> {
 
 // 해당 데코레이터가 선언된 클래스 선언만으로 최초 1회 호출?
 // 데코레이터 함수는 타 함수와 분별하기 위해 함수명이 대문자로 시작?
+// Parameter Decorator
 function RestrictParamValue<T>(restrictedValues: T[]) {
   // 함수 리팩토링?
   return (target: any, propertyKey: string, index: number) => {
@@ -46,6 +47,7 @@ function RestrictParamValue<T>(restrictedValues: T[]) {
 }
 
 // 해당 데코레이터가 선언된 클래스 선언만으로 최초 1회 호출?
+// Method Decorator
 function ValidateMethod(
   target: any,
   propertyKey: string,
