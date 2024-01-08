@@ -2,7 +2,7 @@
  * Reflection and Decorator
  */
 
-// 1. experimental decorator 기능 사용 설정 => TS 기능 => 빌드 타입 작동
+// 1. experimental decorator 기능 사용 설정 => TS 기능 => 빌드 타입 작동?
 // tsconfig.json 내 아래 설정을 추가
 // "compilerOptions": {
 //     ...
@@ -11,7 +11,7 @@
 //     ...
 // }
 
-// 2. Reflection 기능 사용 설정 => JS 기능 => 런타임 작동
+// 2. Reflection 기능 사용 설정 => JS 기능 => 런타임 작동?
 // 사전 패키지 설치 필요
 // --save-dev => package.json에 기록하고 개발할 때만 포함해라.
 // npm install --save-dev reflect-metadata
