@@ -1,6 +1,15 @@
 /**
  * Reflection and Decorator
  */
+
+// tsconfig.json 내 아래 설정을 추가해야 experimental decorator 기능 사용 가능
+// "compilerOptions": {
+//     ...
+//     "experimentalDecorators": true,
+//     "emitDecoratorMetadata": true,
+//     ...
+// }
+
 // 사전 패키지 설치 필요
 // --save-dev => package.json에 기록하고 개발할 때만 포함해라.
 // npm install --save-dev reflect-metadata
