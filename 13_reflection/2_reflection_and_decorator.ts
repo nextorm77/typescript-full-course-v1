@@ -10,7 +10,7 @@ import 'reflect-metadata';
 const restrictParamValueKey = Symbol('restrictParamValue');
 
 interface RestrictionInfo<T> {
-  index: number; // 함수 인수 배열(args)의 index와 일치
+  index: number; // Method Parameter 배열(args)의 index
   restrictedValues: T[];
 }
 
@@ -92,6 +92,12 @@ class Idol {
     return `${this.name}이(가) ${style} 노래를 부릅니다.`;
   }
 }
+// 콘솔 출력 내용
+// [ { index: 1, restrictedValues: [ 1, 2, 3 ] } ]
+// [
+//   { index: 1, restrictedValues: [ 1, 2, 3 ] },
+//   { index: 0, restrictedValues: [ '신나게', '열정적으로' ] }
+// ]
 
 @Injectable()
 export class AppService {
