@@ -35,6 +35,7 @@ interface RestrictionInfo<T> {
 // Parameter Decorator
 function RestrictParamValue<T>(restrictedValues: T[]) {
   // 함수 리팩토링?
+  // target은 여기서 "Idol 클래스"가 아닌 "Idol.prototype"
   return (target: any, propertyKey: string, index: number) => {
     // 기존 배열 가져오기
     // 고정된 T가 아닌 다양한 타입이 혼재할 수 있어서 any?
