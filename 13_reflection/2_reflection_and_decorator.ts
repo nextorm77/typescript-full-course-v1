@@ -5,6 +5,10 @@
 // --save-dev => package.json에 기록하고 개발할 때만 포함해라.
 // npm install --save-dev reflect-metadata
 
+// 코드 이해 순서
+// RestrictParamValue 파라메터 데코레이터만 먼저 실행 분석 후 
+// ValidateMethod 메소드 데코레이터 실행 분석
+
 // 특이한 import 방식?
 import 'reflect-metadata';
 
