@@ -116,14 +116,9 @@ class Idol {
 //   { index: 0, restrictedValues: [ '신나게', '열정적으로' ] }
 // ]
 
-@Injectable()
-export class AppService {
-  getHello(): string {
-    // const yuju = new Idol('유주', 27);
-    console.log('--- sing ---');
-    // console.log(yuju.sing('신나게', 1));
-    // console.log(yuju.sing('열정적으로', 2));
-    // console.log(yuju.sing('기분나쁘게', 4));
-    return 'Hello World';
-  }
-}
+const yuju = new Idol('유주', 27);
+console.log('--- sing ---');
+console.log(yuju.sing('신나게', 1));
+console.log(yuju.sing('열정적으로', 2));
+console.log(yuju.sing('기분나쁘게', 4));
+
