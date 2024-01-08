@@ -65,7 +65,7 @@ function MethodCallLogger(env: string){
         descriptor.value = function(...args: any[]){
             console.log(`[${env}] running function : ${propertyKey}`);
 
-            const result = originalMethod.apply(this, ...args); // 이전 JS 강의에서 배웠다?
+            const result = originalMethod.apply(this, args); // 이전 JS 강의에서 배웠다?
 
             return result;
         }
