@@ -13,7 +13,7 @@
 
 // import cf, {rose, number} from './2_export_1';
 
-// console.log(cf);
+// console.log(cf); // cf 는 default
 // console.log(rose);
 
 // baseUrl
