@@ -26,7 +26,7 @@ function runWork(){
     }
 }
 
-console.log(runWork() === 'DONNE');
+console.log(runWork() === 'DONNE'); // false
 
 const doneState = 'DONE';
 const loadingState = 'LOADGNG';
@@ -48,7 +48,7 @@ function runWork2(){
     }
 }
 
-console.log(runWork2() === doneState);
+console.log(runWork2() === doneState); // true
 
 enum State {
     DONE = 'DONE',
@@ -72,5 +72,5 @@ function runWork3(){
     }
 }
 
-console.log(runWork3() === State.DONE);
-console.log(runWork3());
+console.log(runWork3() === State.DONE); // true
+console.log(runWork3()); // 'DONE'
