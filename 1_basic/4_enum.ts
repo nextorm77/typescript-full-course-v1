@@ -26,7 +26,7 @@ function runWork(){
     }
 }
 
-console.log(runWork() === 'DONNE'); // false
+console.log(runWork() === 'DONNE');
 
 const doneState = 'DONE';
 const loadingState = 'LOADGNG';
@@ -48,8 +48,9 @@ function runWork2(){
     }
 }
 
-console.log(runWork2() === doneState); // true
+console.log(runWork2() === doneState);
 
+// 자동완성 가능?
 enum State {
     DONE = 'DONE',
     LOADING = 'LOADING',
@@ -72,5 +73,5 @@ function runWork3(){
     }
 }
 
-console.log(runWork3() === State.DONE); // true
-console.log(runWork3()); // 'DONE'
+console.log(runWork3() === State.DONE);
+console.log(runWork3());
